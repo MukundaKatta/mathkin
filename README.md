@@ -4,19 +4,26 @@
 
 One AI tutor per grade, K through 10. Homework help. Test prep. Gentle drills. All in one app.
 
-## What you get
+## Stack
 
-- **Grade-tuned** — A third-grader's tutor knows third-grade math. A tenth-grader's tutor knows geometry and algebra II. No mixups.
-- **Shows the work** — Not just answers. Step-by-step, the way their teacher wants it shown.
-- **Spots the gap** — A missed step in Grade 3 haunts Grade 7. Mathkin finds and fills those gaps quietly.
+- **Framework:** Next.js 15 (App Router)
+- **Language:** TypeScript (strict)
+- **Styling:** Tailwind CSS v4
+- **Package manager:** pnpm
 
-## Category
+## Run locally
 
-Education. Part of a 50-product exploration of high-demand consumer and SMB markets.
+```bash
+pnpm install
+pnpm dev
+```
+
+Open [http://localhost:3000](http://localhost:3000).
+
+## Deploy
+
+Push to GitHub and import into [Vercel](https://vercel.com). No environment variables required — the waitlist API URL is hardcoded.
 
 ## Status
 
-Landing page live with interactive demo and functional waitlist.
-
-- **Live:** https://mukundakatta.github.io/mathkin/
-- **Waitlist API:** https://waitlist-api-sigma.vercel.app/api/waitlist
+**v0 skeleton** — landing page with waitlist form, `/try` route with hardcoded math problems (3 per grade, grades 1–10), and a `/api/waitlist` proxy route.
